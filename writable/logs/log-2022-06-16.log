@@ -1,0 +1,429 @@
+ERROR - 2022-06-16 04:43:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%'Si Juki'% OR `author`.`name` LIKE %'Si Juki'% OR `publisher`.`name` LIKE %'...' at line 6
+CRITICAL - 2022-06-16 04:43:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%'Si Juki'% OR `author`.`name` LIKE %'Si Juki'% OR `publisher`.`name` LIKE %'...' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE %\'Si Juki\'% OR `author`.`name` LIKE %\'Si Juki\'% OR `publisher`.`name` LIKE %\'Si Juki\'%
+ORDER BY \'Title\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE %\'Si Juki\'% OR `author`.`name` LIKE %\'Si Juki\'% OR `publisher`.`name` LIKE %\'Si Juki\'%
+ORDER BY \'Title\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE %\'Si Juki\'% OR `author`.`name` LIKE %\'Si Juki\'% OR `publisher`.`name` LIKE %\'Si Juki\'%
+ORDER BY \'Title\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE %\'Si Juki\'% OR `author`.`name` LIKE %\'Si Juki\'% OR `publisher`.`name` LIKE %\'Si Juki\'%
+ORDER BY \'Title\'', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\SearchItem.php(50): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\SearchItem->search()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchItem))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-16 04:43:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%'Si Juki'% OR `author`.`name` LIKE %'Si Juki'% OR `publisher`.`name` LIKE %'...' at line 6
+CRITICAL - 2022-06-16 04:43:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%'Si Juki'% OR `author`.`name` LIKE %'Si Juki'% OR `publisher`.`name` LIKE %'...' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE %\'Si Juki\'% OR `author`.`name` LIKE %\'Si Juki\'% OR `publisher`.`name` LIKE %\'Si Juki\'%
+ORDER BY \'Title\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE %\'Si Juki\'% OR `author`.`name` LIKE %\'Si Juki\'% OR `publisher`.`name` LIKE %\'Si Juki\'%
+ORDER BY \'Title\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE %\'Si Juki\'% OR `author`.`name` LIKE %\'Si Juki\'% OR `publisher`.`name` LIKE %\'Si Juki\'%
+ORDER BY \'Title\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE %\'Si Juki\'% OR `author`.`name` LIKE %\'Si Juki\'% OR `publisher`.`name` LIKE %\'Si Juki\'%
+ORDER BY \'Title\'', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\SearchItem.php(50): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\SearchItem->search()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchItem))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-16 04:43:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%'Si Juki'% OR `author`.`name` LIKE %'Si Juki'% OR `publisher`.`name` LIKE %'...' at line 6
+CRITICAL - 2022-06-16 04:43:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%'Si Juki'% OR `author`.`name` LIKE %'Si Juki'% OR `publisher`.`name` LIKE %'...' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE %\'Si Juki\'% OR `author`.`name` LIKE %\'Si Juki\'% OR `publisher`.`name` LIKE %\'Si Juki\'%
+ORDER BY \'Title\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE %\'Si Juki\'% OR `author`.`name` LIKE %\'Si Juki\'% OR `publisher`.`name` LIKE %\'Si Juki\'%
+ORDER BY \'Title\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE %\'Si Juki\'% OR `author`.`name` LIKE %\'Si Juki\'% OR `publisher`.`name` LIKE %\'Si Juki\'%
+ORDER BY \'Title\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE %\'Si Juki\'% OR `author`.`name` LIKE %\'Si Juki\'% OR `publisher`.`name` LIKE %\'Si Juki\'%
+ORDER BY \'Title\'', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\SearchItem.php(50): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\SearchItem->search()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchItem))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-16 04:46:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Si Juki'%' OR `author`.`name` LIKE '%'Si Juki'%' OR `publisher`.`name` LIKE '...' at line 6
+CRITICAL - 2022-06-16 04:46:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Si Juki'%' OR `author`.`name` LIKE '%'Si Juki'%' OR `publisher`.`name` LIKE '...' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%\'Si Juki\'%\' OR `author`.`name` LIKE \'%\'Si Juki\'%\' OR `publisher`.`name` LIKE \'%\'Si Juki\'%\'
+ORDER BY \'Title\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%\'Si Juki\'%\' OR `author`.`name` LIKE \'%\'Si Juki\'%\' OR `publisher`.`name` LIKE \'%\'Si Juki\'%\'
+ORDER BY \'Title\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%\'Si Juki\'%\' OR `author`.`name` LIKE \'%\'Si Juki\'%\' OR `publisher`.`name` LIKE \'%\'Si Juki\'%\'
+ORDER BY \'Title\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%\'Si Juki\'%\' OR `author`.`name` LIKE \'%\'Si Juki\'%\' OR `publisher`.`name` LIKE \'%\'Si Juki\'%\'
+ORDER BY \'Title\'', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\SearchItem.php(50): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\SearchItem->search()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchItem))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-16 04:51:01 --> Unknown column 'Author' in 'order clause'
+CRITICAL - 2022-06-16 04:51:01 --> Unknown column 'Author' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%Si Juki%\' OR `author`.`name` LIKE \'%Si Juki%\' OR `publisher`.`name` LIKE \'%Si Juki%\'
+ORDER BY `Author` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%Si Juki%\' OR `author`.`name` LIKE \'%Si Juki%\' OR `publisher`.`name` LIKE \'%Si Juki%\'
+ORDER BY `Author` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%Si Juki%\' OR `author`.`name` LIKE \'%Si Juki%\' OR `publisher`.`name` LIKE \'%Si Juki%\'
+ORDER BY `Author` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%Si Juki%\' OR `author`.`name` LIKE \'%Si Juki%\' OR `publisher`.`name` LIKE \'%Si Juki%\'
+ORDER BY `Author` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\SearchItem.php(50): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\SearchItem->search()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchItem))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-16 04:58:02 --> Column 'id' in field list is ambiguous
+CRITICAL - 2022-06-16 04:58:02 --> Column 'id' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%A%\' OR `author`.`name` LIKE \'%A%\' OR `publisher`.`name` LIKE \'%A%\'
+ORDER BY `Publisher`.`name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%A%\' OR `author`.`name` LIKE \'%A%\' OR `publisher`.`name` LIKE \'%A%\'
+ORDER BY `Publisher`.`name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%A%\' OR `author`.`name` LIKE \'%A%\' OR `publisher`.`name` LIKE \'%A%\'
+ORDER BY `Publisher`.`name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%A%\' OR `author`.`name` LIKE \'%A%\' OR `publisher`.`name` LIKE \'%A%\'
+ORDER BY `Publisher`.`name` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\SearchItem.php(56): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\SearchItem->search()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchItem))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-16 05:17:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`id`
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`...' at line 1
+CRITICAL - 2022-06-16 05:17:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`id`
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `DISTINCT` `book`.`id`
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%A%\' OR `author`.`name` LIKE \'%A%\' OR `publisher`.`name` LIKE \'%A%\'
+ORDER BY `Publisher`.`name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINCT` `book`.`id`
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%A%\' OR `author`.`name` LIKE \'%A%\' OR `publisher`.`name` LIKE \'%A%\'
+ORDER BY `Publisher`.`name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINCT` `book`.`id`
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%A%\' OR `author`.`name` LIKE \'%A%\' OR `publisher`.`name` LIKE \'%A%\'
+ORDER BY `Publisher`.`name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINCT` `book`.`id`
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%A%\' OR `author`.`name` LIKE \'%A%\' OR `publisher`.`name` LIKE \'%A%\'
+ORDER BY `Publisher`.`name` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\SearchItem.php(56): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\SearchItem->search()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchItem))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-16 05:17:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`id`
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`...' at line 1
+CRITICAL - 2022-06-16 05:17:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`id`
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `DISTINCT` `book`.`id`
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%A%\' OR `author`.`name` LIKE \'%A%\' OR `publisher`.`name` LIKE \'%A%\'
+ORDER BY `Publisher`.`name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINCT` `book`.`id`
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%A%\' OR `author`.`name` LIKE \'%A%\' OR `publisher`.`name` LIKE \'%A%\'
+ORDER BY `Publisher`.`name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINCT` `book`.`id`
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%A%\' OR `author`.`name` LIKE \'%A%\' OR `publisher`.`name` LIKE \'%A%\'
+ORDER BY `Publisher`.`name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINCT` `book`.`id`
+FROM `book`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`title` LIKE \'%A%\' OR `author`.`name` LIKE \'%A%\' OR `publisher`.`name` LIKE \'%A%\'
+ORDER BY `Publisher`.`name` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\SearchItem.php(56): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\SearchItem->search()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchItem))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-16 05:35:23 --> Array to string conversion
+in APPPATH\Controllers\SearchItem.php on line 69.
+ 1 APPPATH\Controllers\SearchItem.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\SearchItem.php', 69, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\SearchItem->search()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchItem))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-16 05:55:38 --> Undefined variable: book
+in APPPATH\Controllers\SearchItem.php on line 67.
+ 1 APPPATH\Controllers\SearchItem.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: book', 'APPPATH\\Controllers\\SearchItem.php', 67, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\SearchItem->search()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchItem))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-16 05:55:40 --> Undefined variable: book
+in APPPATH\Controllers\SearchItem.php on line 67.
+ 1 APPPATH\Controllers\SearchItem.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: book', 'APPPATH\\Controllers\\SearchItem.php', 67, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\SearchItem->search()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchItem))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-16 05:55:43 --> Undefined variable: book
+in APPPATH\Controllers\SearchItem.php on line 67.
+ 1 APPPATH\Controllers\SearchItem.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: book', 'APPPATH\\Controllers\\SearchItem.php', 67, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\SearchItem->search()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchItem))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-16 20:58:03 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\DetailBook:showpage/$1
+in SYSTEMPATH\Router\Router.php on line 466.
+ 1 SYSTEMPATH\Router\Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\DetailBook:showpage/$1')
+ 2 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('detailbook/2')
+ 3 SYSTEMPATH\CodeIgniter.php(773): CodeIgniter\Router\Router->handle('detailbook/2')
+ 4 SYSTEMPATH\CodeIgniter.php(417): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-16 20:58:33 --> A dynamic controller is not allowed for security reasons. Route handler: \App\Controllers\DetailBook:showpage\$1
+in SYSTEMPATH\Router\Router.php on line 472.
+ 1 SYSTEMPATH\Router\Router.php(472): CodeIgniter\Router\Exceptions\RouterException::forDynamicController('\\App\\Controllers\\DetailBook:showpage\\$1')
+ 2 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('detailbook/2')
+ 3 SYSTEMPATH\CodeIgniter.php(773): CodeIgniter\Router\Router->handle('detailbook/2')
+ 4 SYSTEMPATH\CodeIgniter.php(417): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-16 21:04:17 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\DetailBook:showpage/$1
+in SYSTEMPATH\Router\Router.php on line 466.
+ 1 SYSTEMPATH\Router\Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\DetailBook:showpage/$1')
+ 2 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('detailbook/2')
+ 3 SYSTEMPATH\CodeIgniter.php(773): CodeIgniter\Router\Router->handle('detailbook/2')
+ 4 SYSTEMPATH\CodeIgniter.php(417): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-16 21:05:03 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\DetailBook:showpage/$1
+in SYSTEMPATH\Router\Router.php on line 466.
+ 1 SYSTEMPATH\Router\Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\DetailBook:showpage/$1')
+ 2 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('detailbook/2')
+ 3 SYSTEMPATH\CodeIgniter.php(773): CodeIgniter\Router\Router->handle('detailbook/2')
+ 4 SYSTEMPATH\CodeIgniter.php(417): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-16 21:06:30 --> A dynamic controller is not allowed for security reasons. Route handler: \App\Controllers\DetailBook:showpage\$1
+in SYSTEMPATH\Router\Router.php on line 472.
+ 1 SYSTEMPATH\Router\Router.php(472): CodeIgniter\Router\Exceptions\RouterException::forDynamicController('\\App\\Controllers\\DetailBook:showpage\\$1')
+ 2 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('detailbook/2')
+ 3 SYSTEMPATH\CodeIgniter.php(773): CodeIgniter\Router\Router->handle('detailbook/2')
+ 4 SYSTEMPATH\CodeIgniter.php(417): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-16 21:08:23 --> A dynamic controller is not allowed for security reasons. Route handler: \App\Controllers\DetailBook:showpage\$1
+in SYSTEMPATH\Router\Router.php on line 472.
+ 1 SYSTEMPATH\Router\Router.php(472): CodeIgniter\Router\Exceptions\RouterException::forDynamicController('\\App\\Controllers\\DetailBook:showpage\\$1')
+ 2 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('detailbook/2')
+ 3 SYSTEMPATH\CodeIgniter.php(773): CodeIgniter\Router\Router->handle('detailbook/2')
+ 4 SYSTEMPATH\CodeIgniter.php(417): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-16 21:09:03 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\DetailBook:showpage/$1
+in SYSTEMPATH\Router\Router.php on line 466.
+ 1 SYSTEMPATH\Router\Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\DetailBook:showpage/$1')
+ 2 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('detailbook/2')
+ 3 SYSTEMPATH\CodeIgniter.php(773): CodeIgniter\Router\Router->handle('detailbook/2')
+ 4 SYSTEMPATH\CodeIgniter.php(417): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-16 21:09:23 --> A dynamic controller is not allowed for security reasons. Route handler: \App\Controllers\DetailBook:showpage\$1
+in SYSTEMPATH\Router\Router.php on line 472.
+ 1 SYSTEMPATH\Router\Router.php(472): CodeIgniter\Router\Exceptions\RouterException::forDynamicController('\\App\\Controllers\\DetailBook:showpage\\$1')
+ 2 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('detailbook/2')
+ 3 SYSTEMPATH\CodeIgniter.php(773): CodeIgniter\Router\Router->handle('detailbook/2')
+ 4 SYSTEMPATH\CodeIgniter.php(417): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-16 21:18:11 --> Undefined index: id
+in APPPATH\Controllers\DetailBook.php on line 24.
+ 1 APPPATH\Controllers\DetailBook.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH\\Controllers\\DetailBook.php', 24, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->showpage('1')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-16 21:18:20 --> Undefined index: id
+in APPPATH\Controllers\DetailBook.php on line 24.
+ 1 APPPATH\Controllers\DetailBook.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH\\Controllers\\DetailBook.php', 24, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->showpage('1')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-16 21:52:25 --> Undefined variable: i
+in APPPATH\Views\page\detailbook.php on line 23.
+ 1 APPPATH\Views\page\detailbook.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: i', 'APPPATH\\Views\\page\\detailbook.php', 23, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\detailbook.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/detailbook', [], true)
+ 5 APPPATH\Controllers\DetailBook.php(37): view('page/detailbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->showpage('2')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

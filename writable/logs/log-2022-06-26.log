@@ -1,0 +1,64 @@
+CRITICAL - 2022-06-26 22:48:00 --> Undefined variable: errorRes
+in APPPATH\Views\adminpage\adminlogin.php on line 7.
+ 1 APPPATH\Views\adminpage\adminlogin.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errorRes', 'APPPATH\\Views\\adminpage\\adminlogin.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\adminlogin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/adminlogin', [], true)
+ 5 APPPATH\Controllers\AdminLogin.php(20): view('adminpage/adminlogin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminLogin->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminLogin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-26 22:55:24 --> Undefined variable: LoggedIn
+in APPPATH\Views\layout.php on line 39.
+ 1 APPPATH\Views\layout.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: LoggedIn', 'APPPATH\\Views\\layout.php', 39, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/adminlogin', [], true)
+ 6 APPPATH\Controllers\AdminLogin.php(22): view('adminpage/adminlogin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminLogin->showpage()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminLogin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-26 23:00:14 --> Undefined property: App\Controllers\AdminLogin::$userTable
+in APPPATH\Controllers\AdminLogin.php on line 41.
+ 1 APPPATH\Controllers\AdminLogin.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\AdminLogin::$userTable', 'APPPATH\\Controllers\\AdminLogin.php', 41, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminLogin->verifylogin()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-26 23:03:12 --> Class 'App\Models\Administrator' not found
+in APPPATH\Controllers\AdminLogin.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\AdminLogin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-26 23:03:34 --> Class 'App\Models\Administrator' not found
+in APPPATH\Controllers\AdminLogin.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\AdminLogin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-26 23:20:16 --> Invalid argument supplied for foreach()
+in APPPATH\Views\adminpage\adminlogin.php on line 11.
+ 1 APPPATH\Views\adminpage\adminlogin.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\adminpage\\adminlogin.php', 11, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\adminlogin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/adminlogin', [], true)
+ 5 APPPATH\Controllers\AdminLogin.php(26): view('adminpage/adminlogin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminLogin->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminLogin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-26 23:20:28 --> Invalid argument supplied for foreach()
+in APPPATH\Views\adminpage\adminlogin.php on line 11.
+ 1 APPPATH\Views\adminpage\adminlogin.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\adminpage\\adminlogin.php', 11, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\adminlogin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/adminlogin', [], true)
+ 5 APPPATH\Controllers\AdminLogin.php(26): view('adminpage/adminlogin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminLogin->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminLogin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

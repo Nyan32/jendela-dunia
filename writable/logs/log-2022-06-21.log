@@ -1,0 +1,215 @@
+CRITICAL - 2022-06-21 04:06:05 --> Class 'Config\CustomRule' not found
+in SYSTEMPATH\Validation\Validation.php on line 548.
+ 1 SYSTEMPATH\Validation\Validation.php(122): CodeIgniter\Validation\Validation->loadRuleSets()
+ 2 APPPATH\Controllers\Auth.php(25): CodeIgniter\Validation\Validation->run([...], 'login')
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Auth->verify()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 04:06:08 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('verify', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 09:27:07 --> Undefined index: email
+in APPPATH\Controllers\Auth.php on line 59.
+ 1 APPPATH\Controllers\Auth.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: email', 'APPPATH\\Controllers\\Auth.php', 59, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Auth->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 09:29:27 --> Undefined index: email
+in APPPATH\Controllers\Auth.php on line 59.
+ 1 APPPATH\Controllers\Auth.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: email', 'APPPATH\\Controllers\\Auth.php', 59, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Auth->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 09:31:05 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('verify', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 09:31:24 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('verify', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 09:31:24 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('verify', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 09:31:24 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('verify', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 09:31:24 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('verify', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 09:33:28 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('verify', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-21 12:02:32 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-06-21 12:02:32 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `user_detail` (`name`, `gender`, `birthdate`, `phone`, `address`, `email`, `fine`) VALUES (\'Dummy Dummy\', \'F\', \'2022-06-26\', \'081219701874\', \'Jl. Durian Runtuh 32\', \'dummy@gmail.com\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_detail` (`name`, `gender`, `birthdate`, `phone`, `address`, `email`, `fine`) VALUES (\'Dummy Dummy\', \'F\', \'2022-06-26\', \'081219701874\', \'Jl. Durian Runtuh 32\', \'dummy@gmail.com\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_detail` (`name`, `gender`, `birthdate`, `phone`, `address`, `email`, `fine`) VALUES (\'Dummy Dummy\', \'F\', \'2022-06-26\', \'081219701874\', \'Jl. Durian Runtuh 32\', \'dummy@gmail.com\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_detail` (`name`, `gender`, `birthdate`, `phone`, `address`, `email`, `fine`) VALUES (:name:, :gender:, :birthdate:, :phone:, :address:, :email:, :fine:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Auth.php(56): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Auth->verify()
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 12:02:38 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('verify', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-21 12:04:28 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-06-21 12:04:28 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `user_detail` (`name`, `gender`, `birthdate`, `phone`, `address`, `email`, `fine`) VALUES (\'Dummy Dummy\', \'F\', \'2001-12-23\', \'081219701874\', \'Jl. Durian Runtuh 32\', \'dummy@gmail.com\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_detail` (`name`, `gender`, `birthdate`, `phone`, `address`, `email`, `fine`) VALUES (\'Dummy Dummy\', \'F\', \'2001-12-23\', \'081219701874\', \'Jl. Durian Runtuh 32\', \'dummy@gmail.com\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_detail` (`name`, `gender`, `birthdate`, `phone`, `address`, `email`, `fine`) VALUES (\'Dummy Dummy\', \'F\', \'2001-12-23\', \'081219701874\', \'Jl. Durian Runtuh 32\', \'dummy@gmail.com\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_detail` (`name`, `gender`, `birthdate`, `phone`, `address`, `email`, `fine`) VALUES (:name:, :gender:, :birthdate:, :phone:, :address:, :email:, :fine:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Auth.php(56): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Auth->verify()
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 12:09:49 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('verify', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 12:30:55 --> Undefined variable: data
+in APPPATH\Views\layout.php on line 38.
+ 1 APPPATH\Views\layout.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Views\\layout.php', 38, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/loginreg', [], true)
+ 6 APPPATH\Controllers\LoginRegister.php(17): view('page/loginreg')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LoginRegister->showpage()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 12:31:19 --> Undefined variable: LoggedIn
+in APPPATH\Views\layout.php on line 38.
+ 1 APPPATH\Views\layout.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: LoggedIn', 'APPPATH\\Views\\layout.php', 38, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/loginreg', [], true)
+ 6 APPPATH\Controllers\LoginRegister.php(17): view('page/loginreg')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LoginRegister->showpage()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 12:33:42 --> Undefined variable: LoggedIn
+in APPPATH\Views\layout.php on line 38.
+ 1 APPPATH\Views\layout.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: LoggedIn', 'APPPATH\\Views\\layout.php', 38, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/loginreg', [], true)
+ 6 APPPATH\Controllers\LoginRegister.php(17): view('page/loginreg')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LoginRegister->showpage()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 12:35:36 --> Undefined variable: LoggedIn
+in APPPATH\Views\layout.php on line 38.
+ 1 APPPATH\Views\layout.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: LoggedIn', 'APPPATH\\Views\\layout.php', 38, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/loginreg', [], true)
+ 6 APPPATH\Controllers\LoginRegister.php(17): view('page/loginreg')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LoginRegister->showpage()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 12:36:16 --> Undefined variable: LoggedIn
+in APPPATH\Views\layout.php on line 38.
+ 1 APPPATH\Views\layout.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: LoggedIn', 'APPPATH\\Views\\layout.php', 38, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/loginreg', [], true)
+ 6 APPPATH\Controllers\LoginRegister.php(17): view('page/loginreg')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LoginRegister->showpage()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 12:43:08 --> Undefined property: App\Controllers\Index::$session
+in APPPATH\Controllers\Index.php on line 29.
+ 1 APPPATH\Controllers\Index.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Index::$session', 'APPPATH\\Controllers\\Index.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Index->showpage()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 12:45:15 --> Undefined variable: LoggedIn
+in APPPATH\Views\layout.php on line 38.
+ 1 APPPATH\Views\layout.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: LoggedIn', 'APPPATH\\Views\\layout.php', 38, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/loginreg', [], true)
+ 6 APPPATH\Controllers\LoginRegister.php(17): view('page/loginreg')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LoginRegister->showpage()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 12:45:29 --> Undefined variable: LoggedIn
+in APPPATH\Views\layout.php on line 38.
+ 1 APPPATH\Views\layout.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: LoggedIn', 'APPPATH\\Views\\layout.php', 38, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/loginreg', [], true)
+ 6 APPPATH\Controllers\LoginRegister.php(17): view('page/loginreg')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LoginRegister->showpage()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

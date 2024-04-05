@@ -1,0 +1,545 @@
+CRITICAL - 2022-06-22 03:20:37 --> Undefined property: App\Filters\AuthFilter::$session
+in APPPATH\Filters\AuthFilter.php on line 13.
+ 1 APPPATH\Filters\AuthFilter.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Filters\\AuthFilter::$session', 'APPPATH\\Filters\\AuthFilter.php', 13, [...])
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('likes', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 03:29:15 --> Call to undefined method CodeIgniter\Session\Session::flashdata()
+in APPPATH\Controllers\LoginRegister.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LoginRegister->showpage()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 03:29:43 --> Call to undefined method CodeIgniter\Session\Session::get_flashdata()
+in APPPATH\Controllers\LoginRegister.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LoginRegister->showpage()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 03:30:39 --> Call to undefined method CodeIgniter\Session\Session::flashdata()
+in APPPATH\Controllers\LoginRegister.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LoginRegister->showpage()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginRegister))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-22 03:39:57 --> Unknown column 'likes' in 'field list'
+CRITICAL - 2022-06-22 03:39:57 --> Unknown column 'likes' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `title`, `category`, `year`, `likes`, `ammount`, `status`, `image`, `synopsis`
+FROM `book`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `title`, `category`, `year`, `likes`, `ammount`, `status`, `image`, `synopsis`
+FROM `book`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `title`, `category`, `year`, `likes`, `ammount`, `status`, `image`, `synopsis`
+FROM `book`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `title`, `category`, `year`, `likes`, `ammount`, `status`, `image`, `synopsis`
+FROM `book`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailBook.php(22): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->showpage('1')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-22 03:40:53 --> Unknown column 'likes' in 'field list'
+CRITICAL - 2022-06-22 03:40:53 --> Unknown column 'likes' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `title`, `category`, `year`, `likes`, `ammount`, `status`, `image`, `synopsis`
+FROM `book`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `title`, `category`, `year`, `likes`, `ammount`, `status`, `image`, `synopsis`
+FROM `book`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `title`, `category`, `year`, `likes`, `ammount`, `status`, `image`, `synopsis`
+FROM `book`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `title`, `category`, `year`, `likes`, `ammount`, `status`, `image`, `synopsis`
+FROM `book`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailBook.php(22): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->showpage('1')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-22 03:56:22 --> Unknown column 'Book.likes' in 'order clause'
+CRITICAL - 2022-06-22 03:56:22 --> Unknown column 'Book.likes' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DISTINCT `book`.`id`
+FROM `book`
+JOIN `book_like` ON `book_like`.`book_id` = `book`.`id`
+JOIN `user` ON `book_like`.`user_email` = `user`.`email`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `user`.`email` = \'dummy@gmail.com\'
+ORDER BY `Book`.`likes` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT `book`.`id`
+FROM `book`
+JOIN `book_like` ON `book_like`.`book_id` = `book`.`id`
+JOIN `user` ON `book_like`.`user_email` = `user`.`email`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `user`.`email` = \'dummy@gmail.com\'
+ORDER BY `Book`.`likes` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT `book`.`id`
+FROM `book`
+JOIN `book_like` ON `book_like`.`book_id` = `book`.`id`
+JOIN `user` ON `book_like`.`user_email` = `user`.`email`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `user`.`email` = \'dummy@gmail.com\'
+ORDER BY `Book`.`likes` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `book`.`id`
+FROM `book`
+JOIN `book_like` ON `book_like`.`book_id` = `book`.`id`
+JOIN `user` ON `book_like`.`user_email` = `user`.`email`
+JOIN `book_author` ON `book`.`id` = `book_author`.`book_id`
+JOIN `author` ON `book_author`.`author_id` = `author`.`id`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `user`.`email` = :user.email:
+ORDER BY `Book`.`likes` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\SearchItem.php(59): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\SearchItem->bylikes()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchItem))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 05:59:27 --> Array to string conversion
+in APPPATH\Controllers\DetailBook.php on line 44.
+ 1 APPPATH\Controllers\DetailBook.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\DetailBook.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->showpage('2')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 06:32:25 --> unlink(C:\xampp\htdocs\412019037_OSCAR_DELADAS\writable\debugbar/debugbar_1655458228.218905.json): No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\412019037_OSCAR_DELADAS\\writable\\debugbar/debugbar_1655458228.218905.json): No such file or directory', 'SYSTEMPATH\\Debug\\Toolbar\\Collectors\\History.php', 76, [...])
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(76): unlink('ROOTPATH\\writable\\debugbar/debugbar_1655458228.218905.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(495): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1655897543.197853', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(472): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(328): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 06:44:31 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 718.
+ 1 SYSTEMPATH\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\DetailBook.php(74): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->likebook()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 06:54:03 --> Undefined offset: 0
+in APPPATH\Views\page\likes.php on line 104.
+ 1 APPPATH\Views\page\likes.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\likes.php', 104, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\likes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/likes', [], true)
+ 5 APPPATH\Controllers\LikesBook.php(38): view('page/likes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LikesBook->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LikesBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 06:54:20 --> Undefined offset: 0
+in APPPATH\Views\page\likes.php on line 104.
+ 1 APPPATH\Views\page\likes.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\likes.php', 104, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\likes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/likes', [], true)
+ 5 APPPATH\Controllers\LikesBook.php(38): view('page/likes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LikesBook->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LikesBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 06:58:05 --> Undefined offset: 0
+in APPPATH\Views\page\likes.php on line 104.
+ 1 APPPATH\Views\page\likes.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\likes.php', 104, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\likes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/likes', [], true)
+ 5 APPPATH\Controllers\LikesBook.php(38): view('page/likes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LikesBook->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LikesBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 07:08:20 --> Undefined offset: 0
+in APPPATH\Views\page\likes.php on line 104.
+ 1 APPPATH\Views\page\likes.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\likes.php', 104, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\likes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/likes', [], true)
+ 5 APPPATH\Controllers\LikesBook.php(38): view('page/likes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LikesBook->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LikesBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 07:09:18 --> Undefined offset: 0
+in APPPATH\Views\page\likes.php on line 104.
+ 1 APPPATH\Views\page\likes.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\likes.php', 104, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\likes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/likes', [], true)
+ 5 APPPATH\Controllers\LikesBook.php(38): view('page/likes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LikesBook->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LikesBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 07:13:13 --> Undefined offset: 0
+in APPPATH\Views\page\likes.php on line 104.
+ 1 APPPATH\Views\page\likes.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\likes.php', 104, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\likes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/likes', [], true)
+ 5 APPPATH\Controllers\LikesBook.php(38): view('page/likes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LikesBook->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LikesBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-22 08:07:18 --> Unknown column 'book_like.user_email' in 'where clause'
+CRITICAL - 2022-06-22 08:07:18 --> Unknown column 'book_like.user_email' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `book`
+JOIN `book_borrow` ON `book_like`.`book_id` = `book`.`id`
+JOIN `user` ON `book_like`.`user_email` = `user`.`email`
+WHERE `book_like`.`user_email` = \'dummy@gmail.com\'
+AND `book_like`.`book_id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `book`
+JOIN `book_borrow` ON `book_like`.`book_id` = `book`.`id`
+JOIN `user` ON `book_like`.`user_email` = `user`.`email`
+WHERE `book_like`.`user_email` = \'dummy@gmail.com\'
+AND `book_like`.`book_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `book`
+JOIN `book_borrow` ON `book_like`.`book_id` = `book`.`id`
+JOIN `user` ON `book_like`.`user_email` = `user`.`email`
+WHERE `book_like`.`user_email` = \'dummy@gmail.com\'
+AND `book_like`.`book_id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `book`
+JOIN `book_borrow` ON `book_like`.`book_id` = `book`.`id`
+JOIN `user` ON `book_like`.`user_email` = `user`.`email`
+WHERE `book_like`.`user_email` = :book_like.user_email:
+AND `book_like`.`book_id` = :book_like.book_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailBook.php(58): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->showpage('2')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-22 08:47:50 --> Unknown column 'ammount' in 'field list'
+CRITICAL - 2022-06-22 08:47:50 --> Unknown column 'ammount' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `title`, `category`, `year`, `ammount`, `status`, `image`, `synopsis`
+FROM `book`
+WHERE `id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `title`, `category`, `year`, `ammount`, `status`, `image`, `synopsis`
+FROM `book`
+WHERE `id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `title`, `category`, `year`, `ammount`, `status`, `image`, `synopsis`
+FROM `book`
+WHERE `id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `title`, `category`, `year`, `ammount`, `status`, `image`, `synopsis`
+FROM `book`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailBook.php(27): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->showpage('2')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-22 08:48:29 --> Unknown column 'user.fine' in 'field list'
+CRITICAL - 2022-06-22 08:48:29 --> Unknown column 'user.fine' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(user.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+WHERE `user_email` = \'dummy@gmail.com\'
+AND `status` = \'RETURNED\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(user.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+WHERE `user_email` = \'dummy@gmail.com\'
+AND `status` = \'RETURNED\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(user.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+WHERE `user_email` = \'dummy@gmail.com\'
+AND `status` = \'RETURNED\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(user.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+WHERE `user_email` = :user_email:
+AND `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailBook.php(127): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->borrowbook()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 08:49:30 --> Undefined index: fine
+in APPPATH\Controllers\DetailBook.php on line 129.
+ 1 APPPATH\Controllers\DetailBook.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: fine', 'APPPATH\\Controllers\\DetailBook.php', 129, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->borrowbook()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 08:50:05 --> Undefined index: amount
+in APPPATH\Controllers\DetailBook.php on line 136.
+ 1 APPPATH\Controllers\DetailBook.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: amount', 'APPPATH\\Controllers\\DetailBook.php', 136, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->borrowbook()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 08:50:21 --> Undefined offset: 0
+in APPPATH\Controllers\DetailBook.php on line 136.
+ 1 APPPATH\Controllers\DetailBook.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\DetailBook.php', 136, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->borrowbook()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 08:50:46 --> Undefined offset: 0
+in APPPATH\Controllers\DetailBook.php on line 136.
+ 1 APPPATH\Controllers\DetailBook.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\DetailBook.php', 136, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->borrowbook()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 08:51:07 --> Undefined index: amount
+in APPPATH\Controllers\DetailBook.php on line 136.
+ 1 APPPATH\Controllers\DetailBook.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: amount', 'APPPATH\\Controllers\\DetailBook.php', 136, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->borrowbook()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 08:51:13 --> Undefined offset: 0
+in APPPATH\Controllers\DetailBook.php on line 136.
+ 1 APPPATH\Controllers\DetailBook.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\DetailBook.php', 136, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->borrowbook()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 11:13:16 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\DetailBook.php(174): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 11:15:09 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\DetailBook.php(174): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-22 11:18:12 --> Incorrect parameter count in the call to native function 'DATEDIFF'
+CRITICAL - 2022-06-22 11:18:12 --> Incorrect parameter count in the call to native function 'DATEDIFF'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATEDIFF(return_time - borrow_time) AS passedday
+FROM `book_borrow`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATEDIFF(return_time - borrow_time) AS passedday
+FROM `book_borrow`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATEDIFF(return_time - borrow_time) AS passedday
+FROM `book_borrow`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATEDIFF(return_time - borrow_time) AS passedday
+FROM `book_borrow`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailBook.php(177): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 11:22:03 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\DetailBook.php(174): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 11:22:34 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\DetailBook.php(174): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 11:22:37 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\DetailBook.php(174): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 11:23:57 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\DetailBook.php(174): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 11:24:10 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\DetailBook.php(174): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 11:28:47 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\DetailBook.php(174): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 11:31:19 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\DetailBook.php(175): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 11:32:02 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\DetailBook.php(175): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 11:32:50 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\DetailBook.php(175): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 11:37:10 --> Undefined index: passedDay
+in APPPATH\Controllers\DetailBook.php on line 180.
+ 1 APPPATH\Controllers\DetailBook.php(180): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: passedDay', 'APPPATH\\Controllers\\DetailBook.php', 180, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 11:40:44 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\DetailBook.php(173): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 11:47:15 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\DetailBook.php(188): CodeIgniter\Model->update('3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 11:55:07 --> Unsupported operand types
+in APPPATH\Controllers\DetailBook.php on line 182.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 12:04:25 --> Undefined offset: 0
+in APPPATH\Controllers\DetailBook.php on line 194.
+ 1 APPPATH\Controllers\DetailBook.php(194): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\DetailBook.php', 194, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 12:08:43 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\DetailBook.php(195): CodeIgniter\Model->update('0')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-22 12:09:53 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\DetailBook.php(195): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-22 12:20:16 --> Unknown column 'user_detail.id' in 'where clause'
+CRITICAL - 2022-06-22 12:20:16 --> Unknown column 'user_detail.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `user_detail` SET `fine` = 23000
+WHERE `user_detail`.`id` IN (\'oscar@gmail.com\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user_detail` SET `fine` = 23000
+WHERE `user_detail`.`id` IN (\'oscar@gmail.com\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user_detail` SET `fine` = 23000
+WHERE `user_detail`.`id` IN (\'oscar@gmail.com\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `user_detail` SET `fine` = :fine:
+WHERE `user_detail`.`id` IN :user_detail.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\DetailBook.php(195): CodeIgniter\Model->update([...], [...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->returnbook()
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

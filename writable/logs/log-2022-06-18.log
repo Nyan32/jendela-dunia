@@ -1,0 +1,57 @@
+CRITICAL - 2022-06-18 12:18:16 --> Undefined offset: 1
+in APPPATH\Views\page\detailbook.php on line 82.
+ 1 APPPATH\Views\page\detailbook.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Views\\page\\detailbook.php', 82, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\detailbook.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/detailbook', [], true)
+ 5 APPPATH\Controllers\DetailBook.php(37): view('page/detailbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->showpage('2')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 12:19:16 --> Undefined offset: 1
+in APPPATH\Views\page\detailbook.php on line 82.
+ 1 APPPATH\Views\page\detailbook.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Views\\page\\detailbook.php', 82, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\detailbook.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/detailbook', [], true)
+ 5 APPPATH\Controllers\DetailBook.php(37): view('page/detailbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->showpage('2')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 12:20:13 --> Undefined index: image
+in APPPATH\Views\page\detailbook.php on line 82.
+ 1 APPPATH\Views\page\detailbook.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: image', 'APPPATH\\Views\\page\\detailbook.php', 82, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\detailbook.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/detailbook', [], true)
+ 5 APPPATH\Controllers\DetailBook.php(37): view('page/detailbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->showpage('2')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 13:31:24 --> Call to undefined method CodeIgniter\CodeIgniter::redirect()
+in APPPATH\Config\Routes.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(839): CodeIgniter\CodeIgniter->Config\{closure}()
+ 2 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 20:32:46 --> Invalid file: pages/login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/login.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/login.php', [], true)
+ 3 APPPATH\Controllers\Login.php(22): view('pages/login.php')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->showpage()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-18 20:32:57 --> Invalid file: pages/login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/login.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/login', [], true)
+ 3 APPPATH\Controllers\Login.php(22): view('pages/login')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->showpage()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

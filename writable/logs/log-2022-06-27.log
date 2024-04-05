@@ -1,0 +1,634 @@
+CRITICAL - 2022-06-27 00:04:08 --> Undefined variable: AdminLogin
+in APPPATH\Views\layoutadmin.php on line 36.
+ 1 APPPATH\Views\layoutadmin.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: AdminLogin', 'APPPATH\\Views\\layoutadmin.php', 36, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutadmin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layoutadmin', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/books', [], true)
+ 6 APPPATH\Controllers\AdminIndex.php(37): view('adminpage/books', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminIndex->showpage()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminIndex))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 02:06:21 --> Undefined variable: bookData
+in APPPATH\Views\adminpage\authors.php on line 72.
+ 1 APPPATH\Views\adminpage\authors.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: bookData', 'APPPATH\\Views\\adminpage\\authors.php', 72, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\authors.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/authors', [], true)
+ 5 APPPATH\Controllers\AdminAuthor.php(26): view('adminpage/authors', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAuthor->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 02:20:27 --> Call to undefined method App\Models\Book::sort
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\LikesBook.php(19): CodeIgniter\Model->__call('sort', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LikesBook->showpage()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LikesBook))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 02:20:36 --> Call to undefined method App\Models\Book::sortBy
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\LikesBook.php(19): CodeIgniter\Model->__call('sortBy', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LikesBook->showpage()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LikesBook))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-27 02:20:44 --> Unknown column 'ASC' in 'order clause'
+CRITICAL - 2022-06-27 02:20:44 --> Unknown column 'ASC' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `book`.*
+FROM `book`
+JOIN `book_like` ON `book_like`.`book_id` = `book`.`id`
+JOIN `user` ON `book_like`.`user_email` = `user`.`email`
+WHERE `book_like`.`user_email` = \'oscar@gmail.com\'
+ORDER BY `ASC`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `book`.*
+FROM `book`
+JOIN `book_like` ON `book_like`.`book_id` = `book`.`id`
+JOIN `user` ON `book_like`.`user_email` = `user`.`email`
+WHERE `book_like`.`user_email` = \'oscar@gmail.com\'
+ORDER BY `ASC`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `book`.*
+FROM `book`
+JOIN `book_like` ON `book_like`.`book_id` = `book`.`id`
+JOIN `user` ON `book_like`.`user_email` = `user`.`email`
+WHERE `book_like`.`user_email` = \'oscar@gmail.com\'
+ORDER BY `ASC`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `book`.*
+FROM `book`
+JOIN `book_like` ON `book_like`.`book_id` = `book`.`id`
+JOIN `user` ON `book_like`.`user_email` = `user`.`email`
+WHERE `book_like`.`user_email` = :book_like.user_email:
+ORDER BY `ASC`', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\LikesBook.php(19): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LikesBook->showpage()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LikesBook))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 04:22:36 --> Undefined variable: errorRes
+in APPPATH\Views\adminpage\addeditauthor.php on line 7.
+ 1 APPPATH\Views\adminpage\addeditauthor.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errorRes', 'APPPATH\\Views\\adminpage\\addeditauthor.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\addeditauthor.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditauthor', [], true)
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(31): view('adminpage/addeditauthor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 04:23:06 --> Undefined variable: userData
+in APPPATH\Views\adminpage\addeditauthor.php on line 36.
+ 1 APPPATH\Views\adminpage\addeditauthor.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: userData', 'APPPATH\\Views\\adminpage\\addeditauthor.php', 36, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\addeditauthor.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditauthor', [], true)
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(32): view('adminpage/addeditauthor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 04:23:46 --> Undefined variable: LoggedIn
+in APPPATH\Views\layout.php on line 42.
+ 1 APPPATH\Views\layout.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: LoggedIn', 'APPPATH\\Views\\layout.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditauthor', [], true)
+ 6 APPPATH\Controllers\AdminAddEditAuthor.php(32): view('adminpage/addeditauthor', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->showpage()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 04:39:40 --> syntax error, unexpected '}', expecting ';' or ','
+in APPPATH\Views\adminpage\addeditauthor.php on line 33.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditauthor', [], true)
+ 3 APPPATH\Controllers\AdminAddEditAuthor.php(32): view('adminpage/addeditauthor', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->showpage()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 09:12:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\adminpage\addeditauthor.php on line 59.
+ 1 APPPATH\Views\adminpage\addeditauthor.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\adminpage\\addeditauthor.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\addeditauthor.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditauthor', [], true)
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(34): view('adminpage/addeditauthor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 09:13:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\adminpage\addeditauthor.php on line 59.
+ 1 APPPATH\Views\adminpage\addeditauthor.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\adminpage\\addeditauthor.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\addeditauthor.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditauthor', [], true)
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(34): view('adminpage/addeditauthor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 09:13:07 --> Trying to access array offset on value of type null
+in APPPATH\Views\adminpage\addeditauthor.php on line 59.
+ 1 APPPATH\Views\adminpage\addeditauthor.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\adminpage\\addeditauthor.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\addeditauthor.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditauthor', [], true)
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(34): view('adminpage/addeditauthor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 09:13:09 --> Trying to access array offset on value of type null
+in APPPATH\Views\adminpage\addeditauthor.php on line 59.
+ 1 APPPATH\Views\adminpage\addeditauthor.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\adminpage\\addeditauthor.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\addeditauthor.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditauthor', [], true)
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(34): view('adminpage/addeditauthor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 09:13:10 --> Trying to access array offset on value of type null
+in APPPATH\Views\adminpage\addeditauthor.php on line 59.
+ 1 APPPATH\Views\adminpage\addeditauthor.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\adminpage\\addeditauthor.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\addeditauthor.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditauthor', [], true)
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(34): view('adminpage/addeditauthor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 09:13:11 --> Trying to access array offset on value of type null
+in APPPATH\Views\adminpage\addeditauthor.php on line 59.
+ 1 APPPATH\Views\adminpage\addeditauthor.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\adminpage\\addeditauthor.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\addeditauthor.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditauthor', [], true)
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(34): view('adminpage/addeditauthor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 09:13:12 --> Trying to access array offset on value of type null
+in APPPATH\Views\adminpage\addeditauthor.php on line 59.
+ 1 APPPATH\Views\adminpage\addeditauthor.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\adminpage\\addeditauthor.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\addeditauthor.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditauthor', [], true)
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(34): view('adminpage/addeditauthor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 09:13:14 --> Trying to access array offset on value of type null
+in APPPATH\Views\adminpage\addeditauthor.php on line 59.
+ 1 APPPATH\Views\adminpage\addeditauthor.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\adminpage\\addeditauthor.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\addeditauthor.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditauthor', [], true)
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(34): view('adminpage/addeditauthor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 09:13:52 --> Trying to access array offset on value of type null
+in APPPATH\Views\adminpage\addeditauthor.php on line 59.
+ 1 APPPATH\Views\adminpage\addeditauthor.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\adminpage\\addeditauthor.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\addeditauthor.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditauthor', [], true)
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(34): view('adminpage/addeditauthor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 09:15:43 --> Trying to access array offset on value of type null
+in APPPATH\Views\adminpage\addeditauthor.php on line 76.
+ 1 APPPATH\Views\adminpage\addeditauthor.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\adminpage\\addeditauthor.php', 76, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\addeditauthor.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditauthor', [], true)
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(34): view('adminpage/addeditauthor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 09:42:58 --> fopen(http://localhost/412019037_OSCAR_DELADAS/public/administrator/penulis/index.html): failed to open stream: HTTP wrapper does not support writeable connections
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 179.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost/412019037_OSCAR_DELADAS/public/administrator/penulis/index.html): failed to open stream: HTTP wrapper does not support writeable connections', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 179, [...])
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(179): fopen('http://localhost/412019037_OSCAR_DELADAS/public/administrator/penulis/index.html', 'x+b')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('http://localhost/412019037_OSCAR_DELADAS/public/administrator/penulis/')
+ 4 APPPATH\Controllers\AdminAddEditAuthor.php(75): CodeIgniter\HTTP\Files\UploadedFile->move('http://localhost/412019037_OSCAR_DELADAS/public/administrator/penulis/', 'penulis-6.png')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 09:43:33 --> fopen(http://localhost/412019037_OSCAR_DELADAS/publicadministrator/penulis/index.html): failed to open stream: HTTP wrapper does not support writeable connections
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 179.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost/412019037_OSCAR_DELADAS/publicadministrator/penulis/index.html): failed to open stream: HTTP wrapper does not support writeable connections', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 179, [...])
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(179): fopen('http://localhost/412019037_OSCAR_DELADAS/publicadministrator/penulis/index.html', 'x+b')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('http://localhost/412019037_OSCAR_DELADAS/publicadministrator/penulis/')
+ 4 APPPATH\Controllers\AdminAddEditAuthor.php(75): CodeIgniter\HTTP\Files\UploadedFile->move('http://localhost/412019037_OSCAR_DELADAS/publicadministrator/penulis/', 'penulis-7.png')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 09:43:40 --> fopen(http://localhost/412019037_OSCAR_DELADAS/public/administrator/penulis/index.html): failed to open stream: HTTP wrapper does not support writeable connections
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 179.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost/412019037_OSCAR_DELADAS/public/administrator/penulis/index.html): failed to open stream: HTTP wrapper does not support writeable connections', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 179, [...])
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(179): fopen('http://localhost/412019037_OSCAR_DELADAS/public/administrator/penulis/index.html', 'x+b')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('http://localhost/412019037_OSCAR_DELADAS/public/administrator/penulis/')
+ 4 APPPATH\Controllers\AdminAddEditAuthor.php(75): CodeIgniter\HTTP\Files\UploadedFile->move('http://localhost/412019037_OSCAR_DELADAS/public/administrator/penulis/', 'penulis-8.png')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 10:08:24 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176, [...])
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/', 'penulis-11.png')
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(76): CodeIgniter\HTTP\Files\UploadedFile->store('http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/', 'penulis-11.png')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 10:08:55 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176, [...])
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/', 'penulis-12.png')
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(76): CodeIgniter\HTTP\Files\UploadedFile->store('http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/', 'penulis-12.png')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 10:10:38 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176, [...])
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/', 'penulis-13.png')
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(76): CodeIgniter\HTTP\Files\UploadedFile->store('http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/', 'penulis-13.png')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 10:10:59 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176, [...])
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/', 'penulis-14.png')
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(76): CodeIgniter\HTTP\Files\UploadedFile->store('http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/', 'penulis-14.png')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 10:12:48 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176, [...])
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/', 'penulis-15.png')
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(77): CodeIgniter\HTTP\Files\UploadedFile->store('http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/', 'penulis-15.png')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 10:13:00 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176, [...])
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/', 'penulis-16.jpeg')
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(77): CodeIgniter\HTTP\Files\UploadedFile->store('http://localhost/412019037_OSCAR_DELADAS/publicadministrator/image_upload/penulis/', 'penulis-16.jpeg')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 10:14:50 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176, [...])
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/', 'penulis-17.jpeg')
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(77): CodeIgniter\HTTP\Files\UploadedFile->store('http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/', 'penulis-17.jpeg')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 10:18:56 --> fopen(http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/index.html): failed to open stream: HTTP wrapper does not support writeable connections
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 179.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/index.html): failed to open stream: HTTP wrapper does not support writeable connections', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 179, [...])
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(179): fopen('http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/index.html', 'x+b')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/')
+ 4 APPPATH\Controllers\AdminAddEditAuthor.php(77): CodeIgniter\HTTP\Files\UploadedFile->move('http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/', 'penulis-18.jpeg')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 10:26:18 --> move_uploaded_file(http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-19.jpeg): failed to open stream: HTTP wrapper does not support writeable connections
+in APPPATH\Controllers\AdminAddEditAuthor.php on line 77.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-19.jpeg): failed to open stream: HTTP wrapper does not support writeable connections', 'APPPATH\\Controllers\\AdminAddEditAuthor.php', 77, [...])
+ 2 APPPATH\Controllers\AdminAddEditAuthor.php(77): move_uploaded_file('C:\\xampp\\tmp\\phpD6C9.tmp', 'http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-19.jpeg')
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 10:27:05 --> move_uploaded_file(/administrator/image_upload/penulis/penulis-20.jpeg): failed to open stream: No such file or directory
+in APPPATH\Controllers\AdminAddEditAuthor.php on line 77.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(/administrator/image_upload/penulis/penulis-20.jpeg): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\AdminAddEditAuthor.php', 77, [...])
+ 2 APPPATH\Controllers\AdminAddEditAuthor.php(77): move_uploaded_file('C:\\xampp\\tmp\\php9306.tmp', '/administrator/image_upload/penulis/penulis-20.jpeg')
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 10:28:02 --> move_uploaded_file(/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-21.jpeg): failed to open stream: No such file or directory
+in APPPATH\Controllers\AdminAddEditAuthor.php on line 77.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-21.jpeg): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\AdminAddEditAuthor.php', 77, [...])
+ 2 APPPATH\Controllers\AdminAddEditAuthor.php(77): move_uploaded_file('C:\\xampp\\tmp\\php6ED1.tmp', '/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-21.jpeg')
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 10:28:18 --> move_uploaded_file(localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-22.jpeg): failed to open stream: No such file or directory
+in APPPATH\Controllers\AdminAddEditAuthor.php on line 77.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-22.jpeg): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\AdminAddEditAuthor.php', 77, [...])
+ 2 APPPATH\Controllers\AdminAddEditAuthor.php(77): move_uploaded_file('C:\\xampp\\tmp\\phpAE1D.tmp', 'localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-22.jpeg')
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 10:28:45 --> move_uploaded_file(http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-23.jpeg): failed to open stream: HTTP wrapper does not support writeable connections
+in APPPATH\Controllers\AdminAddEditAuthor.php on line 77.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-23.jpeg): failed to open stream: HTTP wrapper does not support writeable connections', 'APPPATH\\Controllers\\AdminAddEditAuthor.php', 77, [...])
+ 2 APPPATH\Controllers\AdminAddEditAuthor.php(77): move_uploaded_file('C:\\xampp\\tmp\\php1A84.tmp', 'http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-23.jpeg')
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 10:28:53 --> move_uploaded_file(localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-24.jpeg): failed to open stream: No such file or directory
+in APPPATH\Controllers\AdminAddEditAuthor.php on line 77.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-24.jpeg): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\AdminAddEditAuthor.php', 77, [...])
+ 2 APPPATH\Controllers\AdminAddEditAuthor.php(77): move_uploaded_file('C:\\xampp\\tmp\\php3A42.tmp', 'localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-24.jpeg')
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 10:35:57 --> move_uploaded_file(C:/xampp/htdocs/public/administrator/image_upload/penulis/penulis-25.jpeg): failed to open stream: No such file or directory
+in APPPATH\Controllers\AdminAddEditAuthor.php on line 77.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(C:/xampp/htdocs/public/administrator/image_upload/penulis/penulis-25.jpeg): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\AdminAddEditAuthor.php', 77, [...])
+ 2 APPPATH\Controllers\AdminAddEditAuthor.php(77): move_uploaded_file('C:\\xampp\\tmp\\phpB169.tmp', 'C:/xampp/htdocs/public/administrator/image_upload/penulis/penulis-25.jpeg')
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 10:36:59 --> move_uploaded_file(C:/xampp/htdocs412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-26.jpeg): failed to open stream: No such file or directory
+in APPPATH\Controllers\AdminAddEditAuthor.php on line 77.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(C:/xampp/htdocs412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-26.jpeg): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\AdminAddEditAuthor.php', 77, [...])
+ 2 APPPATH\Controllers\AdminAddEditAuthor.php(77): move_uploaded_file('C:\\xampp\\tmp\\phpA0CC.tmp', 'C:/xampp/htdocs412019037_OSCAR_DELADAS/public/administrator/image_upload/penulis/penulis-26.jpeg')
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 12:14:26 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2334.
+ 1 SYSTEMPATH\Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(963): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AdminAuthor.php(35): CodeIgniter\BaseModel->delete()
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAuthor->deleteauthor()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAuthor))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 12:14:55 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2334.
+ 1 SYSTEMPATH\Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(963): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AdminAuthor.php(34): CodeIgniter\BaseModel->delete()
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAuthor->deleteauthor()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAuthor))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 12:15:12 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2334.
+ 1 SYSTEMPATH\Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(963): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AdminAuthor.php(34): CodeIgniter\BaseModel->delete()
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAuthor->deleteauthor()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAuthor))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 12:15:39 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2334.
+ 1 SYSTEMPATH\Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(963): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AdminAuthor.php(34): CodeIgniter\BaseModel->delete()
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAuthor->deleteauthor()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAuthor))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 12:46:08 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 907.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(789): CodeIgniter\Database\BaseBuilder->_whereIn('author.id', true, false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->whereIn('author.id', true)
+ 3 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate(true, [...])
+ 4 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(true, [...])
+ 5 APPPATH\Controllers\AdminAddEditAuthor.php(89): CodeIgniter\Model->update(true, [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 12:47:17 --> Call to a member function delete_files() on null
+in APPPATH\Controllers\AdminAddEditAuthor.php on line 83.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 12:48:24 --> Call to a member function delete_files() on null
+in APPPATH\Controllers\AdminAddEditAuthor.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 12:49:04 --> Call to a member function delete_files() on null
+in APPPATH\Controllers\AdminAddEditAuthor.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 12:49:46 --> Call to a member function delete_files() on null
+in APPPATH\Controllers\AdminAddEditAuthor.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 12:50:15 --> Call to a member function delete_files() on null
+in APPPATH\Controllers\AdminAddEditAuthor.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 12:59:09 --> unlink(): http does not allow unlinking
+in APPPATH\Controllers\AdminAddEditAuthor.php on line 98.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(): http does not allow unlinking', 'APPPATH\\Controllers\\AdminAddEditAuthor.php', 98, [...])
+ 2 APPPATH\Controllers\AdminAddEditAuthor.php(98): unlink('http://localhost/412019037_OSCAR_DELADAS/public/administrator/image_upload/penulispenulis-31.png')
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 13:01:31 --> Call to undefined function App\Controllers\delete_files()
+in APPPATH\Controllers\AdminAddEditAuthor.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditAuthor->addeditauthor()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditAuthor))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 14:01:44 --> Undefined index: adress
+in APPPATH\Controllers\AdminAddEditPublisher.php on line 66.
+ 1 APPPATH\Controllers\AdminAddEditPublisher.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: adress', 'APPPATH\\Controllers\\AdminAddEditPublisher.php', 66, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditPublisher->addeditpublisher()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditPublisher))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 14:17:23 --> Undefined offset: 0
+in APPPATH\Views\page\index.php on line 105.
+ 1 APPPATH\Views\page\index.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\index.php', 105, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/index', [], true)
+ 5 APPPATH\Controllers\Index.php(37): view('page/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Index->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 14:17:37 --> Undefined offset: 0
+in APPPATH\Views\page\index.php on line 105.
+ 1 APPPATH\Views\page\index.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\index.php', 105, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/index', [], true)
+ 5 APPPATH\Controllers\Index.php(37): view('page/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Index->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 14:23:13 --> Undefined offset: 0
+in APPPATH\Views\page\index.php on line 105.
+ 1 APPPATH\Views\page\index.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\index.php', 105, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/index', [], true)
+ 5 APPPATH\Controllers\Index.php(37): view('page/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Index->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 14:24:08 --> Undefined offset: 0
+in APPPATH\Views\page\index.php on line 105.
+ 1 APPPATH\Views\page\index.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\index.php', 105, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/index', [], true)
+ 5 APPPATH\Controllers\Index.php(37): view('page/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Index->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 14:28:38 --> Undefined offset: 0
+in APPPATH\Views\page\detailbook.php on line 137.
+ 1 APPPATH\Views\page\detailbook.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\detailbook.php', 137, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\detailbook.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/detailbook', [], true)
+ 5 APPPATH\Controllers\DetailBook.php(87): view('page/detailbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->showpage('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 14:54:31 --> Undefined offset: 0
+in APPPATH\Views\page\detailbook.php on line 137.
+ 1 APPPATH\Views\page\detailbook.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\detailbook.php', 137, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\detailbook.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/detailbook', [], true)
+ 5 APPPATH\Controllers\DetailBook.php(87): view('page/detailbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->showpage('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 14:54:41 --> Undefined offset: 0
+in APPPATH\Views\page\likes.php on line 105.
+ 1 APPPATH\Views\page\likes.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\likes.php', 105, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\likes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/likes', [], true)
+ 5 APPPATH\Controllers\LikesBook.php(38): view('page/likes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LikesBook->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LikesBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 15:05:18 --> Undefined offset: 0
+in APPPATH\Views\page\detailbook.php on line 140.
+ 1 APPPATH\Views\page\detailbook.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\detailbook.php', 140, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\detailbook.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/detailbook', [], true)
+ 5 APPPATH\Controllers\DetailBook.php(87): view('page/detailbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->showpage('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 15:05:23 --> Undefined offset: 0
+in APPPATH\Views\page\detailbook.php on line 140.
+ 1 APPPATH\Views\page\detailbook.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\detailbook.php', 140, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\detailbook.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/detailbook', [], true)
+ 5 APPPATH\Controllers\DetailBook.php(87): view('page/detailbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->showpage('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 15:11:25 --> Undefined offset: 0
+in APPPATH\Views\page\profile.php on line 97.
+ 1 APPPATH\Views\page\profile.php(97): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\profile.php', 97, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(47): view('page/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profile->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 15:33:58 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\AdminPublisher.php(34): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminPublisher->deletepublisher()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPublisher))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-27 15:36:26 --> Undefined offset: 0
+in APPPATH\Views\adminpage\books.php on line 108.
+ 1 APPPATH\Views\adminpage\books.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\adminpage\\books.php', 108, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\books.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/books', [], true)
+ 5 APPPATH\Controllers\AdminIndex.php(37): view('adminpage/books', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminIndex->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminIndex))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

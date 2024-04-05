@@ -1,0 +1,125 @@
+CRITICAL - 2022-06-28 05:29:01 --> Array to string conversion
+in APPPATH\Controllers\AdminAddEditBook.php on line 26.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\AdminAddEditBook.php', 26, [...])
+ 2 APPPATH\Controllers\AdminAddEditBook.php(26): implode(':', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditBook->showpage('1')
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditBook))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-28 05:31:17 --> Undefined index: auhtor_id
+in APPPATH\Views\adminpage\addeditbook.php on line 289.
+ 1 APPPATH\Views\adminpage\addeditbook.php(289): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: auhtor_id', 'APPPATH\\Views\\adminpage\\addeditbook.php', 289, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\addeditbook.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditbook', [], true)
+ 5 APPPATH\Controllers\AdminAddEditBook.php(48): view('adminpage/addeditbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditBook->showpage('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-28 05:32:15 --> Undefined index: auhtor_id
+in APPPATH\Views\adminpage\addeditbook.php on line 289.
+ 1 APPPATH\Views\adminpage\addeditbook.php(289): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: auhtor_id', 'APPPATH\\Views\\adminpage\\addeditbook.php', 289, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\addeditbook.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditbook', [], true)
+ 5 APPPATH\Controllers\AdminAddEditBook.php(48): view('adminpage/addeditbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditBook->showpage('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-28 05:34:32 --> Undefined index: auhtor_id
+in APPPATH\Views\adminpage\addeditbook.php on line 289.
+ 1 APPPATH\Views\adminpage\addeditbook.php(289): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: auhtor_id', 'APPPATH\\Views\\adminpage\\addeditbook.php', 289, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\addeditbook.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditbook', [], true)
+ 5 APPPATH\Controllers\AdminAddEditBook.php(48): view('adminpage/addeditbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditBook->showpage('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-28 05:35:01 --> Undefined index: auhtor_id
+in APPPATH\Views\adminpage\addeditbook.php on line 289.
+ 1 APPPATH\Views\adminpage\addeditbook.php(289): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: auhtor_id', 'APPPATH\\Views\\adminpage\\addeditbook.php', 289, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\addeditbook.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditbook', [], true)
+ 5 APPPATH\Controllers\AdminAddEditBook.php(48): view('adminpage/addeditbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditBook->showpage('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-28 05:36:01 --> Undefined index: auhtor_id
+in APPPATH\Views\adminpage\addeditbook.php on line 289.
+ 1 APPPATH\Views\adminpage\addeditbook.php(289): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: auhtor_id', 'APPPATH\\Views\\adminpage\\addeditbook.php', 289, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\addeditbook.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/addeditbook', [], true)
+ 5 APPPATH\Controllers\AdminAddEditBook.php(50): view('adminpage/addeditbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditBook->showpage('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditBook))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-28 12:08:15 --> Illegal parameter data types int and row for operation '='
+CRITICAL - 2022-06-28 12:08:15 --> Illegal parameter data types int and row for operation '='
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `author`
+WHERE `id` = (\'2\',\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `author`
+WHERE `id` = (\'2\',\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `author`
+WHERE `id` = (\'2\',\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `author`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Validation\CustomRule.php(61): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\Validation\Validation.php(305): App\Validation\CustomRule->authorIDValidation('2:1', null)
+ 9 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('author_id', 'author_id', '2:1', [...], [...])
+10 APPPATH\Controllers\AdminAddEditBook.php(82): CodeIgniter\Validation\Validation->run([...], 'addbook')
+11 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditBook->addeditbook()
+12 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditBook))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-28 12:23:53 --> Array to string conversion
+in APPPATH\Controllers\AdminAddEditBook.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\AdminAddEditBook.php', 31, [...])
+ 2 APPPATH\Controllers\AdminAddEditBook.php(31): implode(':', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditBook->showpage('2')
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditBook))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-28 12:24:47 --> Array to string conversion
+in APPPATH\Controllers\AdminAddEditBook.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\AdminAddEditBook.php', 31, [...])
+ 2 APPPATH\Controllers\AdminAddEditBook.php(31): implode(':', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditBook->showpage('2')
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditBook))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-28 12:26:31 --> Array to string conversion
+in APPPATH\Controllers\AdminAddEditBook.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\AdminAddEditBook.php', 35, [...])
+ 2 APPPATH\Controllers\AdminAddEditBook.php(35): implode(':', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditBook->showpage('2')
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditBook))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-28 14:09:53 --> Undefined offset: 0
+in APPPATH\Controllers\DetailBook.php on line 137.
+ 1 APPPATH\Controllers\DetailBook.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\DetailBook.php', 137, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->borrowbook()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-28 15:24:53 --> Call to a member function where() on bool
+in APPPATH\Controllers\AdminAddEditGenre.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminAddEditGenre->addeditgenre()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAddEditGenre))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

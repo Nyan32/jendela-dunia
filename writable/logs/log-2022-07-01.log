@@ -1,0 +1,342 @@
+CRITICAL - 2022-07-01 22:27:32 --> Undefined index: id
+in APPPATH\Views\adminpage\users.php on line 27.
+ 1 APPPATH\Views\adminpage\users.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH\\Views\\adminpage\\users.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminpage\\users.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminpage/users', [], true)
+ 5 APPPATH\Controllers\AdminUser.php(27): view('adminpage/users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminUser->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminUser))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-01 22:56:33 --> Undefined offset: 0
+in APPPATH\Controllers\AdminUser.php on line 34.
+ 1 APPPATH\Controllers\AdminUser.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\AdminUser.php', 34, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminUser->controluser()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminUser))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-01 22:57:12 --> Undefined offset: 0
+in APPPATH\Controllers\AdminUser.php on line 34.
+ 1 APPPATH\Controllers\AdminUser.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\AdminUser.php', 34, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminUser->controluser()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminUser))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-01 22:57:43 --> Undefined offset: 0
+in APPPATH\Controllers\AdminUser.php on line 34.
+ 1 APPPATH\Controllers\AdminUser.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\AdminUser.php', 34, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminUser->controluser()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminUser))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-01 23:04:26 --> Undefined index: status
+in APPPATH\Controllers\Auth.php on line 34.
+ 1 APPPATH\Controllers\Auth.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH\\Controllers\\Auth.php', 34, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Auth->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-01 23:04:29 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('verify', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-01 23:05:12 --> Undefined index: status
+in APPPATH\Controllers\Auth.php on line 34.
+ 1 APPPATH\Controllers\Auth.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH\\Controllers\\Auth.php', 34, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Auth->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-01 23:06:42 --> Undefined index: status
+in APPPATH\Controllers\Auth.php on line 34.
+ 1 APPPATH\Controllers\Auth.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH\\Controllers\\Auth.php', 34, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Auth->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-01 23:06:43 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('verify', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-01 23:07:08 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('verify', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-01 23:07:10 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('verify', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-01 23:07:10 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('verify', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-01 23:07:10 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('verify', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-01 23:18:48 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-07-01 23:18:48 --> Column 'status' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = :user_email:
+AND `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailBook.php(129): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->borrowbook()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-01 23:19:50 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-07-01 23:19:50 --> Column 'status' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = :user_email:
+AND `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailBook.php(129): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->borrowbook()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-01 23:22:30 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-07-01 23:22:30 --> Column 'status' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = :user_email:
+AND `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailBook.php(129): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->borrowbook()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-01 23:24:23 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-07-01 23:24:23 --> Column 'status' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = :user_email:
+AND `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailBook.php(129): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->borrowbook()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-01 23:33:42 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-07-01 23:33:42 --> Column 'status' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = :user_email:
+AND `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailBook.php(129): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->borrowbook()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-01 23:34:18 --> Unknown column 'book.status' in 'where clause'
+CRITICAL - 2022-07-01 23:34:18 --> Unknown column 'book.status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `book_borrow`
+WHERE `book_id` = \'1\'
+AND `user_email` = \'oscar@gmail.com\'
+AND `book`.`status` = \'NOT RETURNED\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `book_borrow`
+WHERE `book_id` = \'1\'
+AND `user_email` = \'oscar@gmail.com\'
+AND `book`.`status` = \'NOT RETURNED\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `book_borrow`
+WHERE `book_id` = \'1\'
+AND `user_email` = \'oscar@gmail.com\'
+AND `book`.`status` = \'NOT RETURNED\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `book_borrow`
+WHERE `book_id` = :book_id:
+AND `user_email` = :user_email:
+AND `book`.`status` = :book.status:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailBook.php(126): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->borrowbook()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-01 23:35:55 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-07-01 23:35:55 --> Column 'status' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = \'oscar@gmail.com\'
+AND `status` = \'RETURNED\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(user_detail.fine) AS fine
+FROM `book_borrow`
+JOIN `user` ON `user`.`email` = `book_borrow`.`user_email`
+JOIN `user_detail` ON `user_detail`.`email` = `user`.`email`
+WHERE `user_email` = :user_email:
+AND `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailBook.php(129): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->borrowbook()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-01 23:36:51 --> Undefined index: statusBook
+in APPPATH\Controllers\DetailBook.php on line 137.
+ 1 APPPATH\Controllers\DetailBook.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: statusBook', 'APPPATH\\Controllers\\DetailBook.php', 137, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DetailBook->borrowbook()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailBook))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,107 @@
+CRITICAL - 2022-06-15 21:53:48 --> Array to string conversion
+in APPPATH\Views\page\index.php on line 93.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\page\\index.php', 93, [...])
+ 2 APPPATH\Views\page\index.php(93): array_unique([...])
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/index', [], true)
+ 6 APPPATH\Controllers\Index.php(27): view('page/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Index->showpage()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-15 22:04:22 --> syntax error, unexpected ')', expecting ';'
+in APPPATH\Views\page\index.php on line 97.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/index', [], true)
+ 3 APPPATH\Controllers\Index.php(27): view('page/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Index->showpage()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-15 22:45:14 --> array_push() expects parameter 1 to be array, null given
+in APPPATH\Controllers\Index.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() expects parameter 1 to be array, null given', 'APPPATH\\Controllers\\Index.php', 33, [...])
+ 2 APPPATH\Controllers\Index.php(33): array_push(null, 0)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Index->showpage()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-15 22:56:37 --> Too few arguments to function CodeIgniter\Database\BaseBuilder::join(), 1 passed in C:\xampp\htdocs\412019037_OSCAR_DELADAS\system\Model.php on line 771 and at least 2 expected
+in SYSTEMPATH\Database\BaseBuilder.php on line 593.
+ 1 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->join('book_author.author_id = author.id')
+ 2 APPPATH\Controllers\Index.php(33): CodeIgniter\Model->__call('join', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Index->showpage()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-15 22:57:05 --> A non-numeric value encountered
+in APPPATH\Controllers\Index.php on line 33.
+ 1 APPPATH\Controllers\Index.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\Index.php', 33, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Index->showpage()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-15 23:11:48 --> Unknown column 'book_author.book_id' in 'where clause'
+CRITICAL - 2022-06-15 23:11:48 --> Unknown column 'book_author.book_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `publisher`.`name`
+FROM `book`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book_author`.`book_id` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `publisher`.`name`
+FROM `book`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book_author`.`book_id` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `publisher`.`name`
+FROM `book`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book_author`.`book_id` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `publisher`.`name`
+FROM `book`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book_author`.`book_id` = 1', [], false)
+ 5 SYSTEMPATH\Model.php(184): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Index.php(37): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Index->showpage()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-15 23:12:22 --> Unknown column 'book.book_id' in 'where clause'
+CRITICAL - 2022-06-15 23:12:22 --> Unknown column 'book.book_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `publisher`.`name`
+FROM `book`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`book_id` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `publisher`.`name`
+FROM `book`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`book_id` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `publisher`.`name`
+FROM `book`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`book_id` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `publisher`.`name`
+FROM `book`
+JOIN `publisher` ON `book`.`publisher_id` = `publisher`.`id`
+WHERE `book`.`book_id` = 1', [], false)
+ 5 SYSTEMPATH\Model.php(184): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Index.php(37): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Index->showpage()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-15 23:31:47 --> Undefined variable: auhtor
+in APPPATH\Views\page\index.php on line 113.
+ 1 APPPATH\Views\page\index.php(113): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: auhtor', 'APPPATH\\Views\\page\\index.php', 113, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/index', [], true)
+ 5 APPPATH\Controllers\Index.php(41): view('page/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Index->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

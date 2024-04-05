@@ -1,0 +1,234 @@
+CRITICAL - 2022-06-24 01:17:54 --> Undefined offset: 0
+in APPPATH\Views\page\profile.php on line 11.
+ 1 APPPATH\Views\page\profile.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\profile.php', 11, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(27): view('page/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profile->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-24 01:35:36 --> Undefined property: App\Controllers\Profile::$bookTable
+in APPPATH\Controllers\Profile.php on line 23.
+ 1 APPPATH\Controllers\Profile.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Profile::$bookTable', 'APPPATH\\Controllers\\Profile.php', 23, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profile->showpage()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-24 01:36:25 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-06-24 01:36:25 --> Column 'status' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `book`.*
+FROM `book`
+JOIN `book_borrow` ON `book_borrow`.`book_id` = `book`.`id`
+JOIN `user` ON `book_borrow`.`user_email` = `user`.`email`
+WHERE `book_borrow`.`user_email` = \'oscar@gmail.com\'
+AND `status` = \'NOT RETURNED\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `book`.*
+FROM `book`
+JOIN `book_borrow` ON `book_borrow`.`book_id` = `book`.`id`
+JOIN `user` ON `book_borrow`.`user_email` = `user`.`email`
+WHERE `book_borrow`.`user_email` = \'oscar@gmail.com\'
+AND `status` = \'NOT RETURNED\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `book`.*
+FROM `book`
+JOIN `book_borrow` ON `book_borrow`.`book_id` = `book`.`id`
+JOIN `user` ON `book_borrow`.`user_email` = `user`.`email`
+WHERE `book_borrow`.`user_email` = \'oscar@gmail.com\'
+AND `status` = \'NOT RETURNED\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `book`.*
+FROM `book`
+JOIN `book_borrow` ON `book_borrow`.`book_id` = `book`.`id`
+JOIN `user` ON `book_borrow`.`user_email` = `user`.`email`
+WHERE `book_borrow`.`user_email` = :book_borrow.user_email:
+AND `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Profile.php(24): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profile->showpage()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-24 01:43:25 --> Undefined property: App\Controllers\Profile::$bookAuthorTable
+in APPPATH\Controllers\Profile.php on line 27.
+ 1 APPPATH\Controllers\Profile.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Profile::$bookAuthorTable', 'APPPATH\\Controllers\\Profile.php', 27, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profile->showpage()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-24 02:37:26 --> Array to string conversion
+in APPPATH\Views\page\profile.php on line 10.
+ 1 APPPATH\Views\page\profile.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\page\\profile.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(47): view('page/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profile->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-24 02:49:21 --> Undefined variable: errorRes
+in APPPATH\Views\page\editprofile.php on line 7.
+ 1 APPPATH\Views\page\editprofile.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errorRes', 'APPPATH\\Views\\page\\editprofile.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\editprofile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/editprofile', [], true)
+ 5 APPPATH\Controllers\Profile.php(86): view('page/editprofile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profile->showedit()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-24 02:50:32 --> Undefined variable: errorRes
+in APPPATH\Views\page\editprofile.php on line 7.
+ 1 APPPATH\Views\page\editprofile.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errorRes', 'APPPATH\\Views\\page\\editprofile.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\editprofile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/editprofile', [], true)
+ 5 APPPATH\Controllers\Profile.php(86): view('page/editprofile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profile->showedit()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-24 02:53:25 --> Undefined variable: errorRes
+in APPPATH\Views\page\editprofile.php on line 7.
+ 1 APPPATH\Views\page\editprofile.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errorRes', 'APPPATH\\Views\\page\\editprofile.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\editprofile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/editprofile', [], true)
+ 5 APPPATH\Controllers\Profile.php(86): view('page/editprofile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profile->showedit()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-24 03:04:05 --> Column 'email' in field list is ambiguous
+CRITICAL - 2022-06-24 03:04:05 --> Column 'email' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `name`, `phone`, `address`, `fine`, `gender`, `birthdate`, `email`, `password`
+FROM `user_detail`
+JOIN `user` ON `user`.`email` = `user_detail`.`email`
+WHERE `email` = \'oscar@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`, `phone`, `address`, `fine`, `gender`, `birthdate`, `email`, `password`
+FROM `user_detail`
+JOIN `user` ON `user`.`email` = `user_detail`.`email`
+WHERE `email` = \'oscar@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`, `phone`, `address`, `fine`, `gender`, `birthdate`, `email`, `password`
+FROM `user_detail`
+JOIN `user` ON `user`.`email` = `user_detail`.`email`
+WHERE `email` = \'oscar@gmail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `name`, `phone`, `address`, `fine`, `gender`, `birthdate`, `email`, `password`
+FROM `user_detail`
+JOIN `user` ON `user`.`email` = `user_detail`.`email`
+WHERE `email` = :email:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Profile.php(80): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profile->showedit()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-24 03:04:54 --> Column 'email' in where clause is ambiguous
+CRITICAL - 2022-06-24 03:04:54 --> Column 'email' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `user_detail`.`name`, `user_detail`.`phone`, `user_detail`.`address`, `user_detail`.`gender`, `user_detail`.`birthdate`, `user`.`email`, `user`.`password`
+FROM `user_detail`
+JOIN `user` ON `user`.`email` = `user_detail`.`email`
+WHERE `email` = \'oscar@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_detail`.`name`, `user_detail`.`phone`, `user_detail`.`address`, `user_detail`.`gender`, `user_detail`.`birthdate`, `user`.`email`, `user`.`password`
+FROM `user_detail`
+JOIN `user` ON `user`.`email` = `user_detail`.`email`
+WHERE `email` = \'oscar@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_detail`.`name`, `user_detail`.`phone`, `user_detail`.`address`, `user_detail`.`gender`, `user_detail`.`birthdate`, `user`.`email`, `user`.`password`
+FROM `user_detail`
+JOIN `user` ON `user`.`email` = `user_detail`.`email`
+WHERE `email` = \'oscar@gmail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `user_detail`.`name`, `user_detail`.`phone`, `user_detail`.`address`, `user_detail`.`gender`, `user_detail`.`birthdate`, `user`.`email`, `user`.`password`
+FROM `user_detail`
+JOIN `user` ON `user`.`email` = `user_detail`.`email`
+WHERE `email` = :email:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Profile.php(80): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profile->showedit()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-24 03:08:49 --> Undefined variable: userDetail
+in APPPATH\Views\page\editprofile.php on line 39.
+ 1 APPPATH\Views\page\editprofile.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: userDetail', 'APPPATH\\Views\\page\\editprofile.php', 39, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\editprofile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/editprofile', [], true)
+ 5 APPPATH\Controllers\Profile.php(90): view('page/editprofile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profile->showedit()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-24 03:42:41 --> Invalid file: editprofile.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editprofile.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('editprofile', [], true)
+ 3 APPPATH\Controllers\Auth.php(101): view('editprofile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Auth->editprofile()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-24 03:43:03 --> Undefined variable: userData
+in APPPATH\Views\page\editprofile.php on line 35.
+ 1 APPPATH\Views\page\editprofile.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: userData', 'APPPATH\\Views\\page\\editprofile.php', 35, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\editprofile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/editprofile', [], true)
+ 5 APPPATH\Controllers\Auth.php(101): view('page/editprofile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Auth->editprofile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-24 03:54:20 --> Undefined index: payment
+in APPPATH\Views\page\profile.php on line 10.
+ 1 APPPATH\Views\page\profile.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: payment', 'APPPATH\\Views\\page\\profile.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(47): view('page/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profile->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-24 04:16:05 --> Unknown column 'oscar@gmail.com' in 'where clause'
+CRITICAL - 2022-06-24 04:16:05 --> Unknown column 'oscar@gmail.com' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `email`
+FROM `user`
+WHERE `email` = \'oscar@gmail.com\'
+AND `email` != `oscar@gmail`.`com`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `email`
+FROM `user`
+WHERE `email` = \'oscar@gmail.com\'
+AND `email` != `oscar@gmail`.`com`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `email`
+FROM `user`
+WHERE `email` = \'oscar@gmail.com\'
+AND `email` != `oscar@gmail`.`com`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`
+FROM `user`
+WHERE `email` = :email:
+AND `email` != `oscar@gmail`.`com`', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Auth.php(86): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Auth->editprofile()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-24 04:31:35 --> Undefined offset: 0
+in APPPATH\Views\page\profile.php on line 26.
+ 1 APPPATH\Views\page\profile.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\page\\profile.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(47): view('page/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profile->showpage()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
